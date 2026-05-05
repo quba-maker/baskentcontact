@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './LeadForm.css';
 
 const LeadForm = () => {
+  const { t } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({ name: '', phone: '' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.name && formData.phone) {
-      // Here you would typically send data to an API/backend
       setIsSubmitted(true);
-      // WhatsApp'a yönlendirerek veriyi ulaştırıyoruz (Backend olmadığı için en sağlıklı yöntem)
-      const whatsappMsg = `*YENİ FORM TALEBİ*\n\n*Ad Soyad:* ${formData.name}\n*Telefon:* ${formData.phone}\n\nMerhaba, sağlık danışmanlığı hakkında bilgi almak istiyorum.`;
+      const template = t('form.whatsapp_template', { name: formData.name, phone: formData.phone });
+      const whatsappMsg = `*YENİ FORM TALEBİ*\n\n*Ad Soyad:* ${formData.name}\n*Telefon:* ${formData.phone}\n\n${template}`;
       window.open(`https://wa.me/905527641397?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
     }
   };
@@ -24,21 +25,21 @@ const LeadForm = () => {
           {isSubmitted ? (
             <div className="success-state">
               <CheckCircle2 size={64} color="#25D366" />
-              <h3>Talebiniz Alındı!</h3>
-              <p>Sağlık danışmanlarımız en kısa sürede sizinle iletişime geçecektir.</p>
+              <h3>{t('form.success_title')}</h3>
+              <p>{t('form.success_desc')}</p>
             </div>
           ) : (
             <div className="form-state">
               <div className="form-header text-center">
-                <h2>Biz Sizi Arayalım</h2>
-                <p>İletişim bilgilerinizi bırakın, uzmanlarımız size özel tedavi planı için hemen ulaşsın.</p>
+                <h2>{t('form.title')}</h2>
+                <p>{t('form.subtitle')}</p>
               </div>
               
               <form onSubmit={handleSubmit} className="lead-form">
                 <div className="input-group">
                   <input 
                     type="text" 
-                    placeholder="Adınız Soyadınız" 
+                    placeholder={t('form.placeholder_name')} 
                     required 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -47,7 +48,7 @@ const LeadForm = () => {
                 <div className="input-group">
                   <input 
                     type="tel" 
-                    placeholder="Telefon Numaranız" 
+                    placeholder={t('form.placeholder_phone')} 
                     required 
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
@@ -55,7 +56,7 @@ const LeadForm = () => {
                 </div>
                 <button type="submit" className="btn btn-primary btn-full">
                   <Send size={18} />
-                  Gönder
+                  {t('form.btn_submit')}
                 </button>
               </form>
             </div>

@@ -1,14 +1,17 @@
 import React from 'react';
 import { Globe, ExternalLink } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './Websites.css';
 
 const Websites = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="websites-section section bg-light">
       <div className="container">
         <div className="section-header text-center">
-          <h2>Hastane Web Sitelerimizi Ziyaret Edebilirsiniz</h2>
-          <p>Detaylı bilgi ve diğer hizmetlerimiz için resmi kanallarımız</p>
+          <h2>{t('websites.title')}</h2>
+          <p>{t('websites.subtitle')}</p>
         </div>
         
         <div className="websites-grid">
@@ -17,7 +20,7 @@ const Websites = () => {
               <Globe size={28} />
             </div>
             <div className="website-content">
-              <h3>Uluslararası Hasta Departmanı</h3>
+              <h3>{t('websites.int_title')}</h3>
               <p>konyabaskenthospital.com</p>
             </div>
             <ExternalLink size={20} className="external-icon" />
@@ -28,7 +31,7 @@ const Websites = () => {
               <Globe size={28} />
             </div>
             <div className="website-content">
-              <h3>Başkent Hastanesi Konya</h3>
+              <h3>{t('websites.local_title')}</h3>
               <p>konya.baskenthastaneleri.com</p>
             </div>
             <ExternalLink size={20} className="external-icon" />

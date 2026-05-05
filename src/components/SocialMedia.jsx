@@ -1,9 +1,11 @@
 import React from 'react';
 import { Instagram, Facebook } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import logoImage from '../assets/baskent-logo.svg';
 import './SocialMedia.css';
 
 const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, following }) => {
+  const { t } = useTranslation();
   const isInsta = platform === 'instagram';
   const Icon = isInsta ? Instagram : Facebook;
 
@@ -30,18 +32,20 @@ const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, foll
         <p>{bio}</p>
       </div>
       <div className="profile-action">
-        Takip Et
+        {t('social.btn')}
       </div>
     </a>
   );
 };
 
 const SocialMedia = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="social-section section">
       <div className="container">
         <div className="section-header text-center">
-          <h2>Sosyal Medyada Bizi Takip Edin!</h2>
+          <h2>{t('social.title')}</h2>
         </div>
         
         <div className="social-grid">

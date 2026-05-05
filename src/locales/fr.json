@@ -1,0 +1,52 @@
+{
+  "header": {
+    "badge": "Conseil Santé Privé"
+  },
+  "hero": {
+    "title1": "Votre Santé à ",
+    "title_highlight": "Portée de Main",
+    "title2": "",
+    "subtitle": "En tant qu'équipe de l'Hôpital Başkent Konya, nous sommes à vos côtés à chaque étape de votre traitement. Ajoutez dès maintenant vos consultants spéciaux à vos contacts ou contactez-nous directement.",
+    "btn_form": "Prendre un Rendez-vous",
+    "btn_call": "Nous Contacter"
+  },
+  "social": {
+    "title": "Suivez-nous sur les Réseaux Sociaux !",
+    "btn": "S'abonner"
+  },
+  "team": {
+    "title": "Nos Responsables du Département des Patients Internationaux",
+    "btn_vcard": "Ajouter aux contacts",
+    "title_omer": "Directeur Médical du Département des Patients Internationaux / Médecin",
+    "title_ercan": "Coordinateur des Patients Internationaux / Directeur Adjoint de l'Hôpital",
+    "title_roaa": "Consultante des Patients Internationaux / Assistante de Direction",
+    "org": "Hôpital Başkent Konya"
+  },
+  "form": {
+    "title": "Laissez-nous Vous Rappeler",
+    "subtitle": "Laissez vos coordonnées et nous vous recontacterons dans les plus brefs délais.",
+    "label_name": "Nom et Prénom",
+    "placeholder_name": "Ex: Jean Dupont",
+    "label_phone": "Numéro de Téléphone",
+    "placeholder_phone": "+33 6 12 34 56 78",
+    "btn_submit": "Envoyer",
+    "success_title": "Demande Reçue !",
+    "success_desc": "Nos consultants vous contacteront dans les plus brefs délais.",
+    "whatsapp_template": "Bonjour, je suis {{name}}. Je vous contacte depuis votre site web. Mon numéro: {{phone}}."
+  },
+  "websites": {
+    "title": "Vous Pouvez Visiter Nos Sites Web",
+    "subtitle": "Nos canaux officiels pour des informations détaillées",
+    "int_title": "Département des Patients Internationaux",
+    "local_title": "Hôpital Başkent Konya"
+  },
+  "footer": {
+    "title": "Hôpital Başkent Konya",
+    "desc": "Nous offrons des services de conseil et de traitement de classe mondiale pour votre santé.",
+    "contact_title": "Contact",
+    "get_directions": "Obtenir l'itinéraire",
+    "rights": "Tous Droits Réservés."
+  },
+  "whatsapp_btn": "Consulter",
+  "whatsapp_float_msg": "Bonjour, je contacte l'équipe de l'Hôpital Başkent Konya via votre site web. Je souhaite obtenir des informations."
+}

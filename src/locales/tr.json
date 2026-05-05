@@ -1,0 +1,52 @@
+{
+  "header": {
+    "badge": "Özel Sağlık Danışmanlığı"
+  },
+  "hero": {
+    "title1": "Sağlığınız İçin ",
+    "title_highlight": "Bir Telefon Kadar",
+    "title2": " Yakınız",
+    "subtitle": "Başkent Hastanesi Konya ekibi olarak, tedavi sürecinizin her adımında yanınızdayız. Özel danışmanlarınızı hemen rehberinize ekleyin veya doğrudan iletişime geçin.",
+    "btn_form": "Hızlı Randevu Al",
+    "btn_call": "İletişime Geç"
+  },
+  "social": {
+    "title": "Sosyal Medyada Bizi Takip Edin!",
+    "btn": "Takip Et"
+  },
+  "team": {
+    "title": "Uluslararası Hasta Departmanı Yöneticilerimiz",
+    "btn_vcard": "Rehbere Ekle",
+    "title_omer": "Uluslararası Hasta Departmanı Medikal Direktörü / Doktor",
+    "title_ercan": "Uluslararası Hasta Koordinatörü / Hastane Müdür Yardımcısı",
+    "title_roaa": "Uluslararası Hasta Danışmanı / Yönetici Asistanı",
+    "org": "Başkent Hastanesi Konya"
+  },
+  "form": {
+    "title": "Biz Sizi Arayalım",
+    "subtitle": "Kısaca bilgilerinizi bırakın, en kısa sürede size dönüş yapalım.",
+    "label_name": "Adınız Soyadınız",
+    "placeholder_name": "Örn: Ahmet Yılmaz",
+    "label_phone": "Telefon Numaranız",
+    "placeholder_phone": "+90 555 000 0000",
+    "btn_submit": "Gönder",
+    "success_title": "Talebiniz Alındı!",
+    "success_desc": "Danışmanlarımız en kısa sürede sizinle iletişime geçecektir.",
+    "whatsapp_template": "Merhaba, ben {{name}}. Siteniz üzerinden ulaşıyorum. Telefon numaram: {{phone}}."
+  },
+  "websites": {
+    "title": "Hastane Web Sitelerimizi Ziyaret Edebilirsiniz",
+    "subtitle": "Detaylı bilgi ve diğer hizmetlerimiz için resmi kanallarımız",
+    "int_title": "Uluslararası Hasta Departmanı",
+    "local_title": "Başkent Hastanesi Konya"
+  },
+  "footer": {
+    "title": "Başkent Hastanesi Konya",
+    "desc": "Sağlığınız için uluslararası standartlarda profesyonel danışmanlık ve tedavi hizmetleri sunuyoruz.",
+    "contact_title": "İletişim",
+    "get_directions": "Haritada Yol Tarifi Al",
+    "rights": "Tüm Hakları Saklıdır."
+  },
+  "whatsapp_btn": "Hemen Danışın",
+  "whatsapp_float_msg": "Merhaba, Başkent Hastanesi Konya ekibine siteniz üzerinden ulaşıyorum. Bilgi almak istiyorum."
+}

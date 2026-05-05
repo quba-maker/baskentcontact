@@ -1,11 +1,12 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
-  // Numara müşteri tarafından iletildi.
+  const { t } = useTranslation();
   const whatsappNumber = "905527641397";
-  const message = encodeURIComponent("Merhaba, Başkent Hastanesi Konya ekibine broşür üzerinden ulaşıyorum. Bilgi almak istiyorum.");
+  const message = encodeURIComponent(t('whatsapp_float_msg'));
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   return (
