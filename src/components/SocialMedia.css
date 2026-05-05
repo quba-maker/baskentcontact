@@ -1,0 +1,79 @@
+.social-section {
+  padding-bottom: 40px;
+}
+
+.social-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .social-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.social-group {
+  flex: 1;
+  background: white;
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.social-group h3 {
+  font-size: 1.15rem;
+  color: var(--accent-color); /* Kırmızı Apple tonu */
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  width: 110px;
+}
+
+.social-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+  background: white;
+  box-shadow: var(--shadow-md);
+}
+
+/* Specific Brand Colors on Hover */
+.social-card.instagram:hover {
+  color: #E1306C;
+  border-color: #E1306C;
+}
+
+.social-card.facebook:hover {
+  color: #1877F2;
+  border-color: #1877F2;
+}

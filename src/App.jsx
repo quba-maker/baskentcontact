@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import SocialMedia from './components/SocialMedia';
 import TeamCards from './components/TeamCards';
 import LeadForm from './components/LeadForm';
 import Websites from './components/Websites';
@@ -15,6 +16,7 @@ function App() {
       
       <main>
         <Hero />
+        <SocialMedia />
         <TeamCards />
         <LeadForm />
         <Websites />
