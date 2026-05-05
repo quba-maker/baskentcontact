@@ -19,9 +19,9 @@ const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, foll
             <Icon size={18} fill={isInsta ? "none" : "currentColor"} className="platform-icon" />
           </div>
           <div className="stats-row">
-            <div className="stat"><strong>{posts}</strong><span>gönderi</span></div>
+            {posts && <div className="stat"><strong>{posts}</strong><span>gönderi</span></div>}
             <div className="stat"><strong>{followers}</strong><span>takipçi</span></div>
-            <div className="stat"><strong>{following}</strong><span>takip</span></div>
+            {following && <div className="stat"><strong>{following}</strong><span>takip</span></div>}
           </div>
         </div>
       </div>
@@ -61,9 +61,7 @@ const SocialMedia = () => {
             name="Baskent Konya Hospital"
             bio="International Patient Department"
             link="https://www.facebook.com/baskenthealthkonya"
-            posts="-"
             followers="114 B"
-            following="6"
           />
           <ProfileCard 
             platform="instagram"
@@ -81,9 +79,7 @@ const SocialMedia = () => {
             name="Başkent Hastanesi Konya Uygulama ve Araştırma Merkezi"
             bio="Hastane"
             link="https://www.facebook.com/konyaabaskent"
-            posts="-"
             followers="2,4 B"
-            following="1"
           />
         </div>
       </div>
