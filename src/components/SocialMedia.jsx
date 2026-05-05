@@ -68,12 +68,12 @@ const SocialMedia = () => {
           <ProfileCard 
             platform="instagram"
             handle="baskenthastanesi_konya"
-            name="Başkent Hastanesi Konya"
-            bio="Başkent Üniversitesi Konya Uygulama ve Araştırma Merkezi"
+            name="BAŞKENT ÜNİVERSİTESİ KONYA HASTANESİ"
+            bio="Hastane"
             link="https://www.instagram.com/baskenthastanesi_konya/"
-            posts="1.2 B"
-            followers="25 B"
-            following="50"
+            posts="826"
+            followers="10,3 B"
+            following="12"
           />
           <ProfileCard 
             platform="facebook"
