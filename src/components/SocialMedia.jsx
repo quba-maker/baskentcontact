@@ -30,7 +30,7 @@ const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, foll
         <p>{bio}</p>
       </div>
       <div className="profile-action">
-        Profili Gör
+        Takip Et
       </div>
     </a>
   );
