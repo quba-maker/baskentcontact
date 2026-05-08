@@ -2,18 +2,24 @@ import React from 'react';
 import { Instagram, Facebook } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import logoImage from '../assets/baskent-logo.svg';
+import drOmerAliImg from '../assets/crew/dr-omer-ali-kerkuklu.webp';
 import './SocialMedia.css';
 
-const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, following }) => {
+const ProfileCard = ({ platform, handle, name, bio, link, followers, posts, following, avatarImage, coverImage }) => {
   const { t } = useTranslation();
   const isInsta = platform === 'instagram';
   const Icon = isInsta ? Instagram : Facebook;
 
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className={`profile-card ${platform}`}>
-      <div className="profile-header">
-        <div className="profile-avatar">
-          <img src={logoImage} alt="Başkent Logo" />
+    <a href={link} target="_blank" rel="noopener noreferrer" className={`profile-card ${platform} ${coverImage ? 'has-cover' : ''}`}>
+      {coverImage && (
+        <div className="profile-cover">
+          <img src={coverImage} alt={name} />
+        </div>
+      )}
+      <div className={`profile-header ${coverImage ? 'with-cover' : ''}`}>
+        <div className={`profile-avatar ${avatarImage ? 'avatar-photo' : ''}`}>
+          <img src={avatarImage || logoImage} alt={avatarImage ? name : 'Başkent Logo'} />
         </div>
         <div className="profile-stats">
           <div className="profile-handle-row">
@@ -84,6 +90,18 @@ const SocialMedia = () => {
             bio="Hastane"
             link="https://www.facebook.com/konyaabaskent"
             followers="2,4 B"
+          />
+          <ProfileCard 
+            platform="instagram"
+            handle="dromeralii"
+            name="Ömer Ali Kerküklü"
+            bio="Konya Baskent University Hospital / International Patient Department Medical Director"
+            link="https://www.instagram.com/dromeralii/"
+            posts="97"
+            followers="13,1 B"
+            following="2.318"
+            avatarImage={drOmerAliImg}
+            coverImage={drOmerAliImg}
           />
         </div>
       </div>

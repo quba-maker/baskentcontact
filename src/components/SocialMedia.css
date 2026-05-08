@@ -191,3 +191,71 @@
 .profile-card.facebook .platform-icon {
   color: #1877F2;
 }
+
+/* Cover image styles */
+.profile-card.has-cover {
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.profile-cover {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: -28px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+@media (min-width: 768px) {
+  .profile-cover {
+    height: 160px;
+    margin-bottom: -38px;
+  }
+}
+
+.profile-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.profile-header.with-cover {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-header.with-cover .profile-avatar {
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: white;
+}
+
+/* Avatar photo (for personal accounts) */
+.profile-avatar.avatar-photo {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+  padding: 2px;
+}
+
+.profile-avatar.avatar-photo img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* 5th card spans full width on larger screens */
+.social-grid .profile-card:nth-child(5) {
+  grid-column: 1 / -1;
+  max-width: 500px;
+  justify-self: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .social-grid .profile-card:nth-child(5) {
+    max-width: 520px;
+  }
+}
